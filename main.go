@@ -56,7 +56,7 @@ func sendNotification(sum int) {
 		"to": "en9ec3fm30l3gKakrC0axl:APA91bHGR-hIzXVoiQ-5JCCew4-qtKSJiv5GvjlxQNWPxNJv37yf9CIR97zSXYgNsgcU2W09PLR1OJ7XoZJGXEhziJ7ILlRzT5DQ-uzqqfsRSBuj6YQ1bnc_aNr52JkR3hUeQcP3Spjx",
 		"notification": map[string]string{
 			"title":        "Kpi Mobile",
-			"body":         fmt.Sprintf("Hisob %d", sum),
+			"body":         "SANJAR AKA",
 			"click_action": "FLUTTER_NOTIFICATION_CLICK",
 		},
 		"data": map[string]string{
@@ -80,7 +80,7 @@ func sendNotification(sum int) {
 	req.Header.Set("Content-Type", "application/json")
 
 	// Add your FCM server key as the Authorization header
-	req.Header.Set("Authorization", "key=AAAAuI2nL_w:APA91bEfwqmmsd0TSjKuXnKETb133lmjKPIGCXILjIxwNlv8rf9ECPRAagohUZVuMvsJWXg1wpGeviJm6JMTRK_HmKWUysoTLmi_01RCdlyIRG2RVucU57AKpizhIpSRd_KGJ_HyYqXU")
+	req.Header.Set("Authorization", "key=YOUR_FCM_SERVER_KEY")
 
 	// Send HTTP request
 	client := &http.Client{}
