@@ -133,7 +133,7 @@ func periodicRefresh() {
 	for {
 		startTime := time.Now()
 
-		resp, err := http.Get("http://localhost:8080/refresh")
+		resp, err := http.Get("https://ion-bot.onrender.com/refresh")
 		if err != nil {
 			fmt.Println("Error sending periodic refresh request:", err)
 			time.Sleep(3 * time.Minute) // Wait before retrying
